@@ -1,0 +1,1 @@
+Project created to practice JavaScript concepts!!
