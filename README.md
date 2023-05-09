@@ -1,1 +1,1 @@
-Project created to practice JavaScript concepts!!
+Project created to learn & practice JavaScript concepts!!
