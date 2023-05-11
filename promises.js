@@ -119,6 +119,24 @@ Promise.any([
 });
 
 
+//Sync & Async Code:
+//Javascript is a single threaded language, it cannot run multiple tasks parallely, thus
+//Javascript executes synchronous code first then asynchronous code at the end, if we want to execute async task first then we use async/await
+//ex:
+{
+    //will be executed after the execution of rest of the synchronous code
+    //even if time is zero
+    setTimeout(() => {
+        console.log('settimeout is a async function!');
+    }, 1000);
+
+    console.log('sync code')
+
+    //output:
+    //sync code
+    //settimeout is a async function
+}
+
 //async/await
 //await waits for the promise(or some async code) to execute(or return some value), we have to make function async if we are using await!
 //with await, code execute in synchronous manner.
