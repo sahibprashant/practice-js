@@ -1,5 +1,5 @@
 /**
- * To learn in JavaScript 
+ * Practice JavaScript
  * Scope, Variables(var,let,const) 
  * JS execution proccess & hoisting
  * String methods, array methods
@@ -7,10 +7,13 @@
  * Functions, Arrow Funntions,
  * Closures, Currying, this keyword,
  * Callback Funcitons, Promise, async/await, fetch
+ * Explicit function Binding (call, apply, bind),
+ * Debouncing & Throttling
+ * Event Propogation 
 */
 
 const script = document.createElement('script');
-script.src = "objects.js";
+script.src = "eventpropogation.js";
 document.head.appendChild(script);
 
 /**

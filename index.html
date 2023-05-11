@@ -1,18 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href ="main.css" rel="stylesheet"></style>
-        <script>
-            //add the scirpt after complete page load
-            window.onload = function(){
-                const ele = document.createElement('script');
-                ele.src = "main.js";
-                document.head.appendChild(ele);
-            }
-        </script>
-    </head>
-    <body>
-        <p id = "para">Practice JS! Open Console Press F12</p>
-        <!-- <button id = "btn"></button> -->
-    </body>
+
+<head>
+    <link href="main.css" rel="stylesheet">
+    </style>
+    <script>
+        //add the scirpt after complete page load
+        window.onload = function () {
+            const ele = document.createElement('script');
+            ele.src = "main.js";
+            document.head.appendChild(ele);
+        }
+    </script>
+</head>
+
+<body>
+    <p id="para">Practice JS! Open Console Press F12</p>
+
+    <div class="debouncing_div" style="display: none;">
+        <button class="inc_btn">Incerement</button>
+        <p>Pressed <span class="pressed_count">0</span></p>
+        <p>Debouncing Triggered <span class="deb_triggered_count">0</span></p>
+        <p>Throttling Triggered <span class="th_triggered_count">0</span></p>
+    </div>
+
+    <div class="eventpropogation_task" style="display: none;">
+        <div class="ep_div">
+            Div
+            <form class="ep_form" onsubmit="return false">
+                Form
+                <button class="ep_button">Button</button>
+            </form>
+        </div>
+
+        <button class="modal_btn">Open Modal</button>
+        
+        <div class="modalBackground" style="display: none;">
+            <div class="modal">
+                <p>This is a modal</p>
+            </div>
+        </div>
+    </div>
+
+    <!--lodash cdn for debouncing and throttling-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+        integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
 </html>

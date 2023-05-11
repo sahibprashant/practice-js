@@ -162,3 +162,7 @@ const nameMorethan60 = marks.filter((item, index, val) => {
     return item.name;
 });
 // console.log(nameMorethan60);
+
+
+
+//setting length = 0 of an array makes array empty

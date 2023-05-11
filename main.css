@@ -6,3 +6,43 @@ body{
 p{
     font-size: 20px;
 }
+
+.ep_div{
+    padding: 20px;
+    border: 2px solid red;
+}
+
+.ep_div > form{
+    padding: 20px;
+    border: 2px solid red;
+}
+
+.ep_div > form > button{
+    padding: 20px;
+    border: 2px solid red;
+}
+
+.modal_btn{
+    margin-top: 50px;
+}
+
+.modalBackground{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.259);
+}
+
+.modal{
+    display: flex;
+    width: 100%;
+    margin: 120px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rebeccapurple;
+    border-radius: 20px;
+    background-color: white;
+}
