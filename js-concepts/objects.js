@@ -5,6 +5,7 @@ let user = {
     'name' : 'Rahul',
     'age' : '10'
 }
+// console.log(user.length) //length of an object is equal to the number of keys it has
 user = {...user, city : 'Jaipur'};
 // console.log(user);
 
@@ -100,3 +101,32 @@ class Cars{
 
 let myCar = new Cars('Random');
 // console.log(myCar.getCarName());
+
+
+//ex: find output of code
+class Person {
+	constructor(name) {
+		this.name = name;
+	}
+
+	print = () => {
+		console.log(this.name);
+	}
+};
+
+class Employee extends Person {
+	constructor(name, id) {
+		super(name);
+		this.id = id;
+	}
+
+	print() {
+		console.log(this.name, this.id);
+	}
+};
+
+const one = new Person('one');
+one.print();
+
+const two = new Employee('two', 2);
+two.print();

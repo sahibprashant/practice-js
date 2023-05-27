@@ -46,3 +46,37 @@ p{
     border-radius: 20px;
     background-color: white;
 }
+
+.jsprojects{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10;
+    overflow: hidden;
+}
+
+.projectCard{
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 2px lightblue;
+    transition: all 200ms;
+    &:hover{
+        box-shadow: 2px 2px 12px lightblue;
+    }
+}
+
+.cardLogo{
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cardTitle{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

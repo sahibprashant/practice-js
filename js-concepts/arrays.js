@@ -157,12 +157,25 @@ const sumOfMarks = marks.reduce((acc, item) => {
 // console.log(sumOfMarks);
 
 const nameMorethan60 = marks.filter((item, index, val) => {
-    return item.marks >  60
+    return item.marks > 60
 }).map((item) => {
     return item.name;
 });
 // console.log(nameMorethan60);
 
 
-
 //setting length = 0 of an array makes array empty
+
+//ex: write a function to resize an array
+const resizeArray = (array, newSize) => {
+    const changeSize = newSize - array.length;
+    if (changeSize > 0) {
+        return array.concat(Array(changeSize).fill(0));
+    }
+    return array.slice(0, newSize);
+};
+
+// Usage example:
+const array = [1, 2, 3, 4, 5];
+const array1 = resizeArray(array, 3);  // new size=3   so: [1, 2, 3]
+const array2 = resizeArray(array, 10); // new size=10  so: [1, 2, 3, 4, 5, 6, 0, 0, 0, 0]

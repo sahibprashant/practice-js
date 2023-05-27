@@ -34,27 +34,29 @@ let user = {
         return this.name; //this points to window obj
     },
     printFn() {
-        const nameVal = () => { return this.name }; //this points to user obj
+        const nameVal = () => { return this.name }; //this points to user obj, 
+        //arrow function retains the scope of their defination
+        //nameVal is defined in printFn which is scoped in user object.
         return nameVal();
     }
 }
 
 //callback function : whenever a function is passed as a parameter in a function
-function fn(cb){
+function fn(cb) {
     cb('callback called');
 }
 
-fn(function(msg){
+fn(function (msg) {
     console.log(msg);
 })
 
 //ex:
-function printValReturnDouble(val, fn){
+function printValReturnDouble(val, fn) {
     return fn(val);
 }
-let dv = printValReturnDouble(20, function(val){
+let dv = printValReturnDouble(20, function (val) {
     console.log(val);
-    return 2*val;
+    return 2 * val;
 })
 // console.log(dv);
 
@@ -62,7 +64,7 @@ let dv = printValReturnDouble(20, function(val){
 //first
 //second
 //called
-function firstsecond(){
+function firstsecond() {
     setTimeout(() => {
         console.log('first');
     }, 1000);
@@ -77,25 +79,52 @@ function firstsecond(){
 }
 // firstsecond();
 
-function firstsecondFix(){
-    function callfirst(cb){
+function firstsecondFix() {
+    function callfirst(cb) {
         setTimeout(() => {
             cb('first');
         }, 1000);
     }
 
-    function callSecond(cb){
+    function callSecond(cb) {
         setTimeout(() => {
             cb('second')
         }, 500);
     }
 
-    callfirst(function(msg1){
+    callfirst(function (msg1) {
         console.log(msg1);
-        callSecond(function(msg2){
+        callSecond(function (msg2) {
             console.log(msg2);
             console.log('called');
         })
     });
 }
 firstsecondFix();
+
+
+//ex: find output
+function sayName() {
+    setTimeout(() => {
+        console.log(this.name);
+    }, 1000);
+}
+
+sayName.call({
+    name: 'Username'
+});
+//output: username
+//arrow function retains the scope of their defination 
+
+
+//ex: find output
+function sayName() {
+    setTimeout(function(){
+        console.log(this.name);
+    }, 1000);
+}
+
+sayName.call({
+    name: 'Username'
+});
+//noting will log here as this in case will point to window object
