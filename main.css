@@ -1,82 +1,83 @@
-body{
-    margin: 0;
-    padding: 20px;
+body {
+  margin: 0;
+  padding: 20px;
 }
 
-p{
-    font-size: 20px;
+p {
+  font-size: 20px;
 }
 
-.ep_div{
-    padding: 20px;
-    border: 2px solid red;
+.ep_div {
+  padding: 20px;
+  border: 2px solid red;
 }
 
-.ep_div > form{
-    padding: 20px;
-    border: 2px solid red;
+.ep_div > form {
+  padding: 20px;
+  border: 2px solid red;
 }
 
-.ep_div > form > button{
-    padding: 20px;
-    border: 2px solid red;
+.ep_div > form > button {
+  padding: 20px;
+  border: 2px solid red;
 }
 
-.modal_btn{
-    margin-top: 50px;
+.modal_btn {
+  margin-top: 50px;
 }
 
-.modalBackground{
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.259);
+.modalBackground {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.259);
 }
 
-.modal{
-    display: flex;
-    width: 100%;
-    margin: 120px;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid rebeccapurple;
-    border-radius: 20px;
-    background-color: white;
+.modal {
+  display: flex;
+  width: 100%;
+  margin: 120px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rebeccapurple;
+  border-radius: 20px;
+  background-color: white;
 }
 
-.jsprojects{
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 20px;
-    gap: 10;
-    overflow: hidden;
+.jsprojects {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 10;
+  overflow: hidden;
 }
 
-.projectCard{
-    margin: 15px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: aliceblue;
-    box-shadow: 2px 2px 2px lightblue;
-    transition: all 200ms;
-    &:hover{
-        box-shadow: 2px 2px 12px lightblue;
-    }
+.projectCard {
+  margin: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  box-shadow: 2px 2px 2px lightblue;
+  transition: all 200ms;
+  &:hover {
+    box-shadow: 2px 2px 12px lightblue;
+  }
 }
 
-.cardLogo{
-    width: 200px;
-    border-radius: 10px;
-    cursor: pointer;
+.cardLogo {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.cardTitle{
-    text-align: center;
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.cardTitle {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }

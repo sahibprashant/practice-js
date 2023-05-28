@@ -43,23 +43,23 @@ console.log(b); //10 from global scope
 
 //# Hositing
 console.log(num); //undefined
-var num = 10; 
+var num = 10;
 
 //but in case of let and const we will get error 
 //as they went in Temperorly Dead Zone
 // console.log(num2); //error
 // let num2= 10; //as this is let
 
-function fn(){
+function fn() {
     console.log(num3); //undefined
     var num3 = 20;
 }
 fn();
 
-function fn2(){
+function fn2() {
     // console.log(a,b,c); //will throw error as b is in Temperorly Dead Zone (in hoisting)
     var a = 10;
-    let b  = 20;
+    let b = 20;
     const c = 30;
 }
 fn2();

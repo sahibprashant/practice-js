@@ -1,0 +1,42 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgba(0, 255, 255, 0.212);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: flex;
+  width: 312px;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+}
+
+.mole {
+  background-image: url("mole.jpg");
+  background-size: cover;
+}
+
+.gameButton {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: white;
+  border: 1px dashed black;
+  font-family: "Courier New", Courier, monospace;
+  &:hover {
+    background-color: aqua;
+  }
+}

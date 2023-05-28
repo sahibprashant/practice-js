@@ -27,6 +27,9 @@ game.addEventListener('click', (e) => {
         case "memory-game":
             window.location.href = "/memory-game/index.html"
             break;
+        case "touch-the-mole":
+            window.location.href = "/touch-the-mole/index.html"
+            break;
         default:
             break;
     }
